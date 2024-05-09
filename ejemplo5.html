@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maqueta</title>
+<style type="text/css">
+      .oculto { display:none ;}
+      .visible { display: inline;}
+</style>
+
+
+<script>
+    function muestra(){
+        var elemento = document.getElementById("adicionar");
+        elemento.className = "visisble";
+
+        var enlace = document.getElementById("enlace");
+        enlace.className = "oculto";
+    }
+</script>
+</head>
+<body>
+    <p id="texto">Five Nights at Freddy's, (en su traducción al español como «Cinco Noches con Freddy's»)
+         abreviado como FNaF, es una franquicia de medios basada en una serie de videojuegos de terror 
+         independientes creada, diseñada, desarrollada y publicada por Scott Cawthon. La serie se centra
+          en la historia de una pizzería llamada Freddy Fazbear's Pizza. en Five Nights at Freddy's 1, 2 y 3
+           involucran a un guardia de seguridad nocturno, que debe utilizar varias herramientas 
+           (sobre todo cámaras de seguridad) para sobrevivir contra los animales animatrónicos del restaurante, que,
+            poseídos por las almas de los niños asesinados en la misma pizzería, buscan matarlo durante la madrugada.
+             El cuarto juego, que utiliza diferentes mecánicas que sus predecesores, tiene lugar en un dormitorio
+              y el protagonista debe defenderse de las versiones terroríficas de los animatrónicos, nightmares, 
+              e intentar evitar que entren en el dormitorio. El quinto juego tiene lugar en un almacén debajo del restaurante
+               llamado "Circus Baby's Pizza World". En lugar de un guardia de seguridad nocturno, el personaje del 
+               juego es un técnico llamado Michael Afton, que era el guardia en el primer juego y del sexto, Pizzeria Simulator. 
+               Cada noche, debe hacer una serie de objetivos que cambian durante las noches, según le indica una voz
+                de inteligencia artificial escuchada en el juego. En el sexto juego, el jugador actúa como el dueño
+                 de un local de Freddy Fazbear's Pizza. Tiene que decorarla con artículos de pago, y trabajar durante
+                  la noche para su restaurante, teniendo similitudes con sus predecesoras, 
+        pero ciertas diferencias con las entregas anteriores. En este juego el jugador hace el papel de Mike.
+        <span id="adicionar" class="oculto">La serie ha ganado gran popularidad desde su lanzamiento. Tres adaptaciones a novelas, Five Nights at Freddy's: The Silver Eyes, Five Nights at Freddy's: The Twisted Ones y Five Nights at Freddy's: The Fourth Closet, 
+            fueron lanzadas el 17 de diciembre de 2015, el 27 de junio de 2017 y el 26 de junio de 2018, respectivamente. 
+            </span>
+        </p>
+        <a id="enlace" href='#' onclick="muestra(); return false" ;>Seguir Leyendo</a>
+</body>
+</html>

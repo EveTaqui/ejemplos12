@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maqueta</title>
+<script>
+    function adFila(){
+        var table =document.getElementById("tabla");
+        var row = table.insertRow(-1);
+        var cell, text;
+        for (var i = 0; i < 2; i++){
+            cell = row.insertCell(-1);
+            text = "Row" + row.rowIndex + "Cell" + i;
+
+            cell.appendChild(document.createTextNode(text));
+        }
+    }
+</script>
+
+</head>
+<body>
+    <table id="tabla">
+        <tr>
+            <td>Row 0 Cell 0</td>
+            <td>Row 0 Cell 1</td>
+        </tr>
+    </table>
+    <p><input value="red" type="button" onclick="adFila();" /></p>
+</body>
+</html>

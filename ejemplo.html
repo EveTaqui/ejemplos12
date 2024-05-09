@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maqueta</title>
+</head>
+
+<body>
+    <p>Esta seccion muestra un array</p>
+    <p><button onclick="mostrar();">Mostrar materias</button></p>
+    <p>Esta seccion muestra datos de un formulario</p>
+    <div>
+        <label for="">Introducir valor 1</label>
+        <input type="text" id="val1"><br>
+
+        <label for="">Introduce valor 2</label>
+        <input type="text" id="val2"></div>br>
+        <button onclick="adicionar()">Añadir</button>
+        <p id="resultado"></p>
+        <p id="resta"></p>
+        <p id="multi"></p>
+    </div>
+    <script>
+        function adicionar(){
+            const num1=Number(document.getElementById("val1").value)
+            const num2=Number(document.getElementById("val2").value)
+            const res=num1+num2
+            const resta=num1-num2
+            const mul=num1*num2
+            console.log(res);
+            document.getElementById("resultado").innerHTML="valor"+res
+            document.getElementById("resultado").style.color="green"
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<title>Maqueta</title>
+<script type="text/javascript">
+     function changeText(){
+         var p = document.getElementById("pid");
+         p.style.color = "blue";
+         p.style.fontSize = "18pt";
+     }
+    </script>
+</head>
+<body>
+    <div class="card position-absolute top-50 start-50 translate-middle" style="width: 18rem;">
+        <img src="C:\Users\AREA_PROGRAMACION\Desktop\JavascriptDom/doki.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p id="texto">Five Nights at Freddy's, (en su traducción al español como «Cinco Noches con Freddy's»)
+            abreviado como FNaF, es una franquicia de medios basada en una serie de videojuegos de terror 
+            independientes creada, diseñada, desarrollada y publicada por Scott Cawthon. La serie se centra
+             en la historia de una pizzería llamada Freddy Fazbear's Pizza. en Five Nights at Freddy's 1, 2 y 3
+              involucran a un guardia de seguridad nocturno, que debe utilizar varias herramientas 
+                    de un local de Freddy Fazbear's Pizza. Tiene que decorarla con artículos de pago, y trabajar durante
+                     la noche para su restaurante, teniendo similitudes con sus predecesoras, 
+           pero ciertas diferencias con las entregas anteriores. En este juego el jugador hace el papel de Mike.
+           <span id="adicionar" class="oculto">La serie ha ganado gran popularidad desde su lanzamiento. Tres adaptaciones a novelas, Five Nights at Freddy's: The Silver Eyes, Five Nights at Freddy's: The Twisted Ones y Five Nights at Freddy's: The Fourth Closet, 
+               fueron lanzadas el 17 de diciembre de 2015, el 27 de junio de 2017 y el 26 de junio de 2018, respectivamente. 
+               </span>
+           </p>
+           <a id="enlace" href='#' onclick="muestra(); return false" ;>Seguir Leyendo</a>
+         <p><input value="rec" type="button"onclick="changeText();" /></p>
+        </div>
+      </div>
+</body>
+</html>

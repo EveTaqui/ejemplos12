@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maqueta</title>
+</head>
+<body>
+    <h1>Ejemplos</h1>
+    <ul>
+        <li id="listado">Matematica</li>
+        <li id="lista">Lenguaje</li>
+        <li id="listado">Fisica</li>
+        <li class="listado">Fisica</li>
+        <li>Quimica</li>
+        <li clase="listaor">
+            <li>UNO</li>
+            <li id="item1">DOS</li>
+            <li>TRES</li>
+            <li>
+                <span id="tema">Item 4</li>
+                </li>
+        </ol>
+    </ul>
+<button onclick="cambiarDom();"></button>
+<script>
+    const Lista=document.getElementById('listado')
+    Lista.style.backgroundColor='green'
+
+    const List=document.querySelector("#lista")
+    List.style.backgroundColor='black'
+
+    const lis=document.querySelector(".lista")
+    lis.style.backgroundColor='red'
+
+    const lietiqueta=document.querySelector("li")
+    lietiqueta.style.backgroundColor='blue'
+
+    const lor=docuemnt.querySelectorAll('#item1, #tema')
+    for(let elemento of lor)
+    {
+        elemento.style.backgroundColor='red'
+    }
+
+    const listado=document.querySelectorAll('.lista')
+    const listadp=document.querySelectorAll('li,ol,span')
+
+    function cambiarDom(){
+    document.body.style.backgroundColor='red'
+    document.body.style.color='red'
+    document.body.style.fontFamily='Courier'
+    document.body.style.margin='12px'
+    document.body.style.border='2px solid #445f00'
+    document.body.style.padding ='15px'
+    }
+    </script>
+</body>
+</html>
